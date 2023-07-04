@@ -1,0 +1,270 @@
+-- Inserir dados em uma tabela de departamentos 
+
+INSERT INTO MC_DEPTO (CD_DEPTO, NM_DEPTO, ST_DEPTO) VALUES (SQ_MC_DEPTO.NEXTVAL, 'COMERCIAL','A');
+INSERT INTO MC_DEPTO (CD_DEPTO, NM_DEPTO, ST_DEPTO) VALUES (SQ_MC_DEPTO.NEXTVAL, 'CONTABILIDADE','A');
+INSERT INTO MC_DEPTO (CD_DEPTO, NM_DEPTO, ST_DEPTO) VALUES (SQ_MC_DEPTO.NEXTVAL, 'ESTOQUE','A');
+INSERT INTO MC_DEPTO (CD_DEPTO, NM_DEPTO, ST_DEPTO) VALUES (SQ_MC_DEPTO.NEXTVAL, 'FINANCEIRO','A');
+INSERT INTO MC_DEPTO (CD_DEPTO, NM_DEPTO, ST_DEPTO) VALUES (SQ_MC_DEPTO.NEXTVAL, 'SAC (SERVIÇO DE ATENDIMENTO AO CLIENTE)','A');
+INSERT INTO MC_DEPTO (CD_DEPTO, NM_DEPTO, ST_DEPTO) VALUES (SQ_MC_DEPTO.NEXTVAL, 'LOGISTICA','A');
+INSERT INTO MC_DEPTO (CD_DEPTO, NM_DEPTO, ST_DEPTO) VALUES (SQ_MC_DEPTO.NEXTVAL, 'RECURSOS HUMANOS (RH)','A');
+
+-- Inserir usuários em uma tabela funcionários
+
+INSERT INTO mc_funcionario (cd_funcionario, cd_depto, nm_funcionario, dt_nascimento, ds_cargo)
+     VALUES (SQ_MC_FUNCIONARIO.NEXTVAL, 1, 'Adele Bispo' , TO_DATE('25/12/1980', 'dd/mm/yyyy'), 'Gerente Comercial');
+INSERT INTO mc_funcionario (cd_funcionario, cd_depto, nm_funcionario, dt_nascimento, ds_cargo)
+     VALUES (SQ_MC_FUNCIONARIO.NEXTVAL, 1, 'Bruno Mars' , TO_DATE('10/03/1975', 'dd/mm/yyyy'), 'Assitente Comercial');
+INSERT INTO mc_funcionario (cd_funcionario, cd_depto, nm_funcionario, dt_nascimento, ds_cargo)
+     VALUES (SQ_MC_FUNCIONARIO.NEXTVAL, 1, 'Ariana Grande' , TO_DATE('13/12/1999', 'dd/mm/yyyy'), 'Assitente Comercial');
+
+INSERT INTO mc_funcionario (cd_funcionario, cd_depto, nm_funcionario, dt_nascimento, ds_cargo)
+     VALUES (SQ_MC_FUNCIONARIO.NEXTVAL, 2, 'Roberto Carlos' , TO_DATE('01/02/2003', 'dd/mm/yyyy'), 'Diretor de Contabilidade');
+INSERT INTO mc_funcionario (cd_funcionario, cd_depto, nm_funcionario, dt_nascimento, ds_cargo)
+     VALUES (SQ_MC_FUNCIONARIO.NEXTVAL, 2, 'Anitta da Silva' , TO_DATE('02/02/2003', 'dd/mm/yyyy'), 'Assistente de Contabilidade');
+INSERT INTO mc_funcionario (cd_funcionario, cd_depto, nm_funcionario, dt_nascimento, ds_cargo)
+     VALUES (SQ_MC_FUNCIONARIO.NEXTVAL, 2, 'Xuxa Shaxa' , TO_DATE('03/02/2003', 'dd/mm/yyyy'), 'Estagiária de Contabilidade');
+
+INSERT INTO mc_funcionario (cd_funcionario, cd_depto, nm_funcionario, dt_nascimento, ds_cargo)
+     VALUES (SQ_MC_FUNCIONARIO.NEXTVAL, 3, 'Pedro Brasil' , TO_DATE('04/02/2003', 'dd/mm/yyyy'), 'Diretor de Estoque');
+INSERT INTO mc_funcionario (cd_funcionario, cd_depto, nm_funcionario, dt_nascimento, ds_cargo)
+     VALUES (SQ_MC_FUNCIONARIO.NEXTVAL, 3, 'Caetano Veloso' , TO_DATE('05/02/2003', 'dd/mm/yyyy'), 'Assistente de Estoque');
+INSERT INTO mc_funcionario (cd_funcionario, cd_depto, nm_funcionario, dt_nascimento, ds_cargo)
+     VALUES (SQ_MC_FUNCIONARIO.NEXTVAL, 3, 'Silvio Santos' , TO_DATE('06/02/2003', 'dd/mm/yyyy'), 'Estagiário de Estoque');
+
+INSERT INTO mc_funcionario (cd_funcionario, cd_depto, nm_funcionario, dt_nascimento, ds_cargo)
+     VALUES (SQ_MC_FUNCIONARIO.NEXTVAL, 4, 'Gamalhães Moraes' , TO_DATE('07/02/2003', 'dd/mm/yyyy'), 'Diretor de Finanças');
+INSERT INTO mc_funcionario (cd_funcionario, cd_depto, nm_funcionario, dt_nascimento, ds_cargo)
+     VALUES (SQ_MC_FUNCIONARIO.NEXTVAL, 4, 'Serjinho Xulapa' , TO_DATE('08/02/2003', 'dd/mm/yyyy'), 'Assistente de Finanças');
+INSERT INTO mc_funcionario (cd_funcionario, cd_depto, nm_funcionario, dt_nascimento, ds_cargo)
+     VALUES (SQ_MC_FUNCIONARIO.NEXTVAL, 4, 'Romário Brittto' , TO_DATE('09/02/2003', 'dd/mm/yyyy'), 'Trainee de Finanças');
+
+INSERT INTO mc_funcionario (cd_funcionario, cd_depto, nm_funcionario, dt_nascimento, ds_cargo)
+     VALUES (SQ_MC_FUNCIONARIO.NEXTVAL, 5, 'Bruna Marquezine' , TO_DATE('10/02/2003', 'dd/mm/yyyy'), 'Diretora de SAC');
+INSERT INTO mc_funcionario (cd_funcionario, cd_depto, nm_funcionario, dt_nascimento, ds_cargo)
+     VALUES (SQ_MC_FUNCIONARIO.NEXTVAL, 5, 'Neymar Jr' , TO_DATE('11/02/2003', 'dd/mm/yyyy'), 'Assistente de SAC');
+INSERT INTO mc_funcionario (cd_funcionario, cd_depto, nm_funcionario, dt_nascimento, ds_cargo)
+     VALUES (SQ_MC_FUNCIONARIO.NEXTVAL, 5, 'Maradona de Cahera' , TO_DATE('12/02/2003', 'dd/mm/yyyy'), 'Trainee de SAC');
+
+INSERT INTO mc_funcionario (cd_funcionario, cd_depto, nm_funcionario, dt_nascimento, ds_cargo)
+     VALUES (SQ_MC_FUNCIONARIO.NEXTVAL, 6, 'Pelé Troféu' , TO_DATE('13/02/2003', 'dd/mm/yyyy'), 'Diretor de Logística');
+INSERT INTO mc_funcionario (cd_funcionario, cd_depto, nm_funcionario, dt_nascimento, ds_cargo)
+     VALUES (SQ_MC_FUNCIONARIO.NEXTVAL, 6, 'Tite Moreira' , TO_DATE('14/02/2003', 'dd/mm/yyyy'), 'Assistente de Logística');
+INSERT INTO mc_funcionario (cd_funcionario, cd_depto, nm_funcionario, dt_nascimento, ds_cargo)
+     VALUES (SQ_MC_FUNCIONARIO.NEXTVAL, 6, 'Dunga de Melo' , TO_DATE('15/02/2003', 'dd/mm/yyyy'), 'Trainee de Logística');
+
+INSERT INTO mc_funcionario (cd_funcionario, cd_depto, nm_funcionario, dt_nascimento, ds_cargo)
+     VALUES (SQ_MC_FUNCIONARIO.NEXTVAL, 7, 'Van Gogh' , TO_DATE('16/02/2003', 'dd/mm/yyyy'), 'Diretor de RH');
+INSERT INTO mc_funcionario (cd_funcionario, cd_depto, nm_funcionario, dt_nascimento, ds_cargo)
+     VALUES (SQ_MC_FUNCIONARIO.NEXTVAL, 7, 'Monet da Silva' , TO_DATE('17/02/2003', 'dd/mm/yyyy'), 'Assistente de RH');
+INSERT INTO mc_funcionario (cd_funcionario, cd_depto, nm_funcionario, dt_nascimento, ds_cargo, vl_salario)
+     VALUES (SQ_MC_FUNCIONARIO.NEXTVAL, 7, 'Mickel Angelo' , TO_DATE('18/02/2003', 'dd/mm/yyyy'), 'Trainee de RH', 1000);
+
+-- inserir dados de Estados associados para cada cidade, associe no mínimo 1 bairro e para cada bairro, associe 2 endereços
+
+-- Estados
+INSERT INTO MC_ESTADO (SG_ESTADO, NM_ESTADO) VALUES ('AC', 'ACRE');
+INSERT INTO MC_ESTADO (SG_ESTADO, NM_ESTADO) VALUES ('AL', 'ALAGOAS');
+INSERT INTO MC_ESTADO (SG_ESTADO, NM_ESTADO) VALUES ('AP', 'AMAPÁ');
+INSERT INTO MC_ESTADO (SG_ESTADO, NM_ESTADO) VALUES ('AM', 'AMAZONAS');
+INSERT INTO MC_ESTADO (SG_ESTADO, NM_ESTADO) VALUES ('BA', 'BAHIA');
+INSERT INTO MC_ESTADO (SG_ESTADO, NM_ESTADO) VALUES ('CE', 'CEARÁ');
+INSERT INTO MC_ESTADO (SG_ESTADO, NM_ESTADO) VALUES ('DF', 'DISTRITO FEDERAL');
+INSERT INTO MC_ESTADO (SG_ESTADO, NM_ESTADO) VALUES ('ES', 'ESPÍRITO SANTO');
+INSERT INTO MC_ESTADO (SG_ESTADO, NM_ESTADO) VALUES ('GO', 'GOIÁS');
+INSERT INTO MC_ESTADO (SG_ESTADO, NM_ESTADO) VALUES ('MA', 'MARANHÃO');
+INSERT INTO MC_ESTADO (SG_ESTADO, NM_ESTADO) VALUES ('MT', 'MATO GROSSO');
+INSERT INTO MC_ESTADO (SG_ESTADO, NM_ESTADO) VALUES ('MS', 'MATO GROSSO DO SUL');
+INSERT INTO MC_ESTADO (SG_ESTADO, NM_ESTADO) VALUES ('MG', 'MINAS GERAIS');
+INSERT INTO MC_ESTADO (SG_ESTADO, NM_ESTADO) VALUES ('PA', 'PARÁ');
+INSERT INTO MC_ESTADO (SG_ESTADO, NM_ESTADO) VALUES ('PB', 'PARAÍBA');
+INSERT INTO MC_ESTADO (SG_ESTADO, NM_ESTADO) VALUES ('PR', 'PARANÁ');
+INSERT INTO MC_ESTADO (SG_ESTADO, NM_ESTADO) VALUES ('PE', 'PERNAMBUCO');
+INSERT INTO MC_ESTADO (SG_ESTADO, NM_ESTADO) VALUES ('PI', 'PIAUÍ');
+INSERT INTO MC_ESTADO (SG_ESTADO, NM_ESTADO) VALUES ('RJ', 'RIO DE JANEIRO');
+INSERT INTO MC_ESTADO (SG_ESTADO, NM_ESTADO) VALUES ('RN', 'RIO GRANDE DO NORTE');
+INSERT INTO MC_ESTADO (SG_ESTADO, NM_ESTADO) VALUES ('RS', 'RIO GRANDE DO SUL');
+INSERT INTO MC_ESTADO (SG_ESTADO, NM_ESTADO) VALUES ('RO', 'RONDÔNIA');
+INSERT INTO MC_ESTADO (SG_ESTADO, NM_ESTADO) VALUES ('RR', 'RORAIMA');
+INSERT INTO MC_ESTADO (SG_ESTADO, NM_ESTADO) VALUES ('SC', 'SANTA CATARINA');
+INSERT INTO MC_ESTADO (SG_ESTADO, NM_ESTADO) VALUES ('SP', 'SÃO PAULO');
+INSERT INTO MC_ESTADO (SG_ESTADO, NM_ESTADO) VALUES ('SE', 'SERGIPE');
+INSERT INTO MC_ESTADO (SG_ESTADO, NM_ESTADO) VALUES ('TO', 'TOCANTINS');
+
+-- Cidades
+INSERT INTO MC_CIDADE (CD_CIDADE, SG_ESTADO, NM_CIDADE, CD_IBGE, NR_DDD) VALUES (SQ_MC_CIDADE.NEXTVAL, 'SP', 'SÃO PAULO', '3550308', '11');
+INSERT INTO MC_CIDADE (CD_CIDADE, SG_ESTADO, NM_CIDADE, CD_IBGE, NR_DDD) VALUES (SQ_MC_CIDADE.NEXTVAL, 'SP', 'CAMPINAS', '3509502', '19');
+INSERT INTO MC_CIDADE (CD_CIDADE, SG_ESTADO, NM_CIDADE, CD_IBGE, NR_DDD) VALUES (SQ_MC_CIDADE.NEXTVAL, 'CE', 'FORTALEZA', '2304400', '85');
+INSERT INTO MC_CIDADE (CD_CIDADE, SG_ESTADO, NM_CIDADE, CD_IBGE, NR_DDD) VALUES (SQ_MC_CIDADE.NEXTVAL, 'CE', 'JUAZEIRO DO NORTE', '2307304', '88');
+INSERT INTO MC_CIDADE (CD_CIDADE, SG_ESTADO, NM_CIDADE, CD_IBGE, NR_DDD) VALUES (SQ_MC_CIDADE.NEXTVAL, 'RJ', 'RIO DE JANEIRO', '3304557', '21');
+INSERT INTO MC_CIDADE (CD_CIDADE, SG_ESTADO, NM_CIDADE, CD_IBGE, NR_DDD) VALUES (SQ_MC_CIDADE.NEXTVAL, 'RJ', 'ANGRA DOS REIS', '3300100', '24');
+INSERT INTO MC_CIDADE (CD_CIDADE, SG_ESTADO, NM_CIDADE, CD_IBGE, NR_DDD) VALUES (SQ_MC_CIDADE.NEXTVAL, 'MS', 'BONITO', '5002209', '67');
+INSERT INTO MC_CIDADE (CD_CIDADE, SG_ESTADO, NM_CIDADE, CD_IBGE, NR_DDD) VALUES (SQ_MC_CIDADE.NEXTVAL, 'MS', 'CAMPO GRANDE', '5002704', '67');
+INSERT INTO MC_CIDADE (CD_CIDADE, SG_ESTADO, NM_CIDADE, CD_IBGE, NR_DDD) VALUES (SQ_MC_CIDADE.NEXTVAL, 'PR', 'CURITIBA', '4106902', '41');
+INSERT INTO MC_CIDADE (CD_CIDADE, SG_ESTADO, NM_CIDADE, CD_IBGE, NR_DDD) VALUES (SQ_MC_CIDADE.NEXTVAL,'PR', 'CASCAVEL', '4104808', '45');
+
+-- Bairros
+INSERT INTO MC_BAIRRO (CD_BAIRRO, CD_CIDADE, NM_BAIRRO, NM_ZONA_BAIRRO) VALUES (SQ_MC_BAIRRO.NEXTVAL, 1, 'VILA MARIANA', 'ZONA SUL');
+INSERT INTO MC_BAIRRO (CD_BAIRRO, CD_CIDADE, NM_BAIRRO, NM_ZONA_BAIRRO) VALUES (SQ_MC_BAIRRO.NEXTVAL, 2, 'VILA INDUSTRIAL', 'CENTRO');
+INSERT INTO MC_BAIRRO (CD_BAIRRO, CD_CIDADE, NM_BAIRRO, NM_ZONA_BAIRRO) VALUES (SQ_MC_BAIRRO.NEXTVAL, 3, 'ALDEOTA', 'CENTRO');
+INSERT INTO MC_BAIRRO (CD_BAIRRO, CD_CIDADE, NM_BAIRRO, NM_ZONA_BAIRRO) VALUES (SQ_MC_BAIRRO.NEXTVAL, 4, 'SALESIANOS', 'CENTRO');
+INSERT INTO MC_BAIRRO (CD_BAIRRO, CD_CIDADE, NM_BAIRRO, NM_ZONA_BAIRRO) VALUES (SQ_MC_BAIRRO.NEXTVAL, 5, 'IPANEMA', 'ZONA SUL');
+INSERT INTO MC_BAIRRO (CD_BAIRRO, CD_CIDADE, NM_BAIRRO, NM_ZONA_BAIRRO) VALUES (SQ_MC_BAIRRO.NEXTVAL, 6, 'MORRO DO ABEL', 'CENTRO');
+INSERT INTO MC_BAIRRO (CD_BAIRRO, CD_CIDADE, NM_BAIRRO, NM_ZONA_BAIRRO) VALUES (SQ_MC_BAIRRO.NEXTVAL, 7, 'FORMOSO', 'ZONA NORTE');
+INSERT INTO MC_BAIRRO (CD_BAIRRO, CD_CIDADE, NM_BAIRRO, NM_ZONA_BAIRRO) VALUES (SQ_MC_BAIRRO.NEXTVAL, 8, 'MONTE CASTELO', 'ZONA NORTE');
+INSERT INTO MC_BAIRRO (CD_BAIRRO, CD_CIDADE, NM_BAIRRO, NM_ZONA_BAIRRO) VALUES (SQ_MC_BAIRRO.NEXTVAL, 9, 'BOQUEIRÃO', 'ZONA SUL');
+INSERT INTO MC_BAIRRO (CD_BAIRRO, CD_CIDADE, NM_BAIRRO, NM_ZONA_BAIRRO) VALUES (SQ_MC_BAIRRO.NEXTVAL, 10, 'CENTRO', 'CENTRO');
+
+-- Endereços (Logradouro)
+INSERT INTO MC_LOGRADOURO (CD_LOGRADOURO, CD_BAIRRO, NM_LOGRADOURO, NR_CEP) VALUES (SQ_MC_LOGRADOURO.NEXTVAL, 1, 'Rua Jardim Ivone', 04105020);
+INSERT INTO MC_LOGRADOURO (CD_LOGRADOURO, CD_BAIRRO, NM_LOGRADOURO, NR_CEP) VALUES (SQ_MC_LOGRADOURO.NEXTVAL, 1, 'Rua Vergueiro', 04101000);
+INSERT INTO MC_LOGRADOURO (CD_LOGRADOURO, CD_BAIRRO, NM_LOGRADOURO, NR_CEP) VALUES (SQ_MC_LOGRADOURO.NEXTVAL, 2, 'Rua Carolina Florence', 13035010);
+INSERT INTO MC_LOGRADOURO (CD_LOGRADOURO, CD_BAIRRO, NM_LOGRADOURO, NR_CEP) VALUES (SQ_MC_LOGRADOURO.NEXTVAL, 2, 'Rua Ernesto Alves', 13035560);
+INSERT INTO MC_LOGRADOURO (CD_LOGRADOURO, CD_BAIRRO, NM_LOGRADOURO, NR_CEP) VALUES (SQ_MC_LOGRADOURO.NEXTVAL, 3, 'Avenida Dom Luís', 60160230);
+INSERT INTO MC_LOGRADOURO (CD_LOGRADOURO, CD_BAIRRO, NM_LOGRADOURO, NR_CEP) VALUES (SQ_MC_LOGRADOURO.NEXTVAL, 3, 'Rua Marcos Macêdo', 60150190);
+INSERT INTO MC_LOGRADOURO (CD_LOGRADOURO, CD_BAIRRO, NM_LOGRADOURO, NR_CEP) VALUES (SQ_MC_LOGRADOURO.NEXTVAL, 4, 'Rua Padre Cícero', 63022010);
+INSERT INTO MC_LOGRADOURO (CD_LOGRADOURO, CD_BAIRRO, NM_LOGRADOURO, NR_CEP) VALUES (SQ_MC_LOGRADOURO.NEXTVAL, 4, 'Rua Dom Bosco', 63050000);
+INSERT INTO MC_LOGRADOURO (CD_LOGRADOURO, CD_BAIRRO, NM_LOGRADOURO, NR_CEP) VALUES (SQ_MC_LOGRADOURO.NEXTVAL, 5, 'Rua Visconde de Pirajá', 22410002);
+INSERT INTO MC_LOGRADOURO (CD_LOGRADOURO, CD_BAIRRO, NM_LOGRADOURO, NR_CEP) VALUES (SQ_MC_LOGRADOURO.NEXTVAL, 5, 'Rua Maria Quitéria', 22410040);
+INSERT INTO MC_LOGRADOURO (CD_LOGRADOURO, CD_BAIRRO, NM_LOGRADOURO, NR_CEP) VALUES (SQ_MC_LOGRADOURO.NEXTVAL, 6, 'Rua José Eduardo Rolim', 79040400);
+INSERT INTO MC_LOGRADOURO (CD_LOGRADOURO, CD_BAIRRO, NM_LOGRADOURO, NR_CEP) VALUES (SQ_MC_LOGRADOURO.NEXTVAL, 6, 'Rua Ariovaldo Tavares', 79040370);
+INSERT INTO MC_LOGRADOURO (CD_LOGRADOURO, CD_BAIRRO, NM_LOGRADOURO, NR_CEP) VALUES (SQ_MC_LOGRADOURO.NEXTVAL, 7, 'Rua Pilad Rebuá', 79290000);
+INSERT INTO MC_LOGRADOURO (CD_LOGRADOURO, CD_BAIRRO, NM_LOGRADOURO, NR_CEP) VALUES (SQ_MC_LOGRADOURO.NEXTVAL, 7, 'Rua Luiz da Costa Leite', 79290000);
+INSERT INTO MC_LOGRADOURO (CD_LOGRADOURO, CD_BAIRRO, NM_LOGRADOURO, NR_CEP) VALUES (SQ_MC_LOGRADOURO.NEXTVAL, 8, 'Rua Projetada', 23909215);
+INSERT INTO MC_LOGRADOURO (CD_LOGRADOURO, CD_BAIRRO, NM_LOGRADOURO, NR_CEP) VALUES (SQ_MC_LOGRADOURO.NEXTVAL, 8, 'Rua Nossa Senhora Aparecida', 23909225);
+INSERT INTO MC_LOGRADOURO (CD_LOGRADOURO, CD_BAIRRO, NM_LOGRADOURO, NR_CEP) VALUES (SQ_MC_LOGRADOURO.NEXTVAL, 9, 'Rua Souza Naves', 04105020);
+INSERT INTO MC_LOGRADOURO (CD_LOGRADOURO, CD_BAIRRO, NM_LOGRADOURO, NR_CEP) VALUES (SQ_MC_LOGRADOURO.NEXTVAL, 9, 'Rua Paraná', 04101000);
+INSERT INTO MC_LOGRADOURO (CD_LOGRADOURO, CD_BAIRRO, NM_LOGRADOURO, NR_CEP) VALUES (SQ_MC_LOGRADOURO.NEXTVAL, 10, 'Rua Pereira', 85810901);
+INSERT INTO MC_LOGRADOURO (CD_LOGRADOURO, CD_BAIRRO, NM_LOGRADOURO, NR_CEP) VALUES (SQ_MC_LOGRADOURO.NEXTVAL, 10, 'Rua do Ferro', 85810010);
+
+-- Cadastrar na tabela todos os funcionários com no mínimo 1 endereço para cada um
+iNSERT INTO mc_end_func (cd_funcionario, cd_logradouro, nr_end, dt_inicio, st_end) values (1, 1, 1, TO_DATE('01/01/2001', 'dd/mm/yyyy'), 'A');
+iNSERT INTO mc_end_func (cd_funcionario, cd_logradouro, nr_end, dt_inicio, st_end) values (2, 2, 2, TO_DATE('02/01/2001', 'dd/mm/yyyy'), 'A');
+iNSERT INTO mc_end_func (cd_funcionario, cd_logradouro, nr_end, dt_inicio, st_end) values (3, 3, 3, TO_DATE('03/01/2001', 'dd/mm/yyyy'), 'A');
+iNSERT INTO mc_end_func (cd_funcionario, cd_logradouro, nr_end, dt_inicio, st_end) values (4, 4, 4, TO_DATE('04/01/2001', 'dd/mm/yyyy'), 'A');
+iNSERT INTO mc_end_func (cd_funcionario, cd_logradouro, nr_end, dt_inicio, st_end) values (5, 5, 5, TO_DATE('05/01/2001', 'dd/mm/yyyy'), 'A');
+iNSERT INTO mc_end_func (cd_funcionario, cd_logradouro, nr_end, dt_inicio, st_end) values (6, 6, 6, TO_DATE('06/01/2001', 'dd/mm/yyyy'), 'A');
+iNSERT INTO mc_end_func (cd_funcionario, cd_logradouro, nr_end, dt_inicio, st_end) values (7, 7, 7, TO_DATE('07/01/2001', 'dd/mm/yyyy'), 'A');
+iNSERT INTO mc_end_func (cd_funcionario, cd_logradouro, nr_end, dt_inicio, st_end) values (8, 8, 8, TO_DATE('08/01/2001', 'dd/mm/yyyy'), 'A');
+iNSERT INTO mc_end_func (cd_funcionario, cd_logradouro, nr_end, dt_inicio, st_end) values (9, 9, 9, TO_DATE('09/01/2001', 'dd/mm/yyyy'), 'A');
+iNSERT INTO mc_end_func (cd_funcionario, cd_logradouro, nr_end, dt_inicio, st_end) values (10, 10, 10, TO_DATE('10/01/2001', 'dd/mm/yyyy'), 'A');
+iNSERT INTO mc_end_func (cd_funcionario, cd_logradouro, nr_end, dt_inicio, st_end) values (11, 11, 11, TO_DATE('11/01/2001', 'dd/mm/yyyy'), 'A');
+iNSERT INTO mc_end_func (cd_funcionario, cd_logradouro, nr_end, dt_inicio, st_end) values (12, 12, 12, TO_DATE('12/01/2001', 'dd/mm/yyyy'), 'A');
+iNSERT INTO mc_end_func (cd_funcionario, cd_logradouro, nr_end, dt_inicio, st_end) values (13, 13, 13, TO_DATE('13/01/2001', 'dd/mm/yyyy'), 'A');
+iNSERT INTO mc_end_func (cd_funcionario, cd_logradouro, nr_end, dt_inicio, st_end) values (14, 14, 14, TO_DATE('14/01/2001', 'dd/mm/yyyy'), 'A');
+iNSERT INTO mc_end_func (cd_funcionario, cd_logradouro, nr_end, dt_inicio, st_end) values (15, 15, 15, TO_DATE('15/01/2001', 'dd/mm/yyyy'), 'A');
+iNSERT INTO mc_end_func (cd_funcionario, cd_logradouro, nr_end, dt_inicio, st_end) values (16, 16, 16, TO_DATE('16/01/2001', 'dd/mm/yyyy'), 'A');
+iNSERT INTO mc_end_func (cd_funcionario, cd_logradouro, nr_end, dt_inicio, st_end) values (17, 17, 17, TO_DATE('17/01/2001', 'dd/mm/yyyy'), 'A');
+iNSERT INTO mc_end_func (cd_funcionario, cd_logradouro, nr_end, dt_inicio, st_end) values (18, 18, 18, TO_DATE('18/01/2001', 'dd/mm/yyyy'), 'A');
+iNSERT INTO mc_end_func (cd_funcionario, cd_logradouro, nr_end, dt_inicio, st_end) values (19, 19, 19, TO_DATE('19/01/2001', 'dd/mm/yyyy'), 'A');
+iNSERT INTO mc_end_func (cd_funcionario, cd_logradouro, nr_end, dt_inicio, st_end) values (20, 20, 20, TO_DATE('20/01/2001', 'dd/mm/yyyy'), 'A');
+iNSERT INTO mc_end_func (cd_funcionario, cd_logradouro, nr_end, dt_inicio, st_end) values (21, 1, 21, TO_DATE('21/01/2001', 'dd/mm/yyyy'), 'A');
+iNSERT INTO mc_end_func (cd_funcionario, cd_logradouro, nr_end, dt_inicio, dt_termino, st_end) values (18, 1, 41, TO_DATE('01/12/2001', 'dd/mm/yyyy'), TO_DATE('01/12/2002', 'dd/mm/yyyy'), 'I');
+iNSERT INTO mc_end_func (cd_funcionario, cd_logradouro, nr_end, dt_inicio, dt_termino, st_end) values (19, 2, 42, TO_DATE('02/12/2001', 'dd/mm/yyyy'), TO_DATE('02/12/2002', 'dd/mm/yyyy'), 'I');
+iNSERT INTO mc_end_func (cd_funcionario, cd_logradouro, nr_end, dt_inicio, dt_termino, st_end) values (20, 3, 43, TO_DATE('03/12/2001', 'dd/mm/yyyy'), TO_DATE('03/12/2002', 'dd/mm/yyyy'), 'I');
+iNSERT INTO mc_end_func (cd_funcionario, cd_logradouro, nr_end, dt_inicio, dt_termino, st_end) values (21, 4, 44, TO_DATE('04/12/2001', 'dd/mm/yyyy'), TO_DATE('04/12/2002', 'dd/mm/yyyy'), 'I');
+
+
+-- Cadastrar clientes com um endereço para cada um
+
+-- Clientes no geral (MC_CLIENTE)
+INSERT INTO MC_CLIENTE (nr_cliente, nm_cliente, nm_login, ds_senha) VALUES (SQ_MC_CLIENTE.NEXTVAL, 'Paula Braccio', 'paula_braccio', 'paula123');
+INSERT INTO MC_CLIENTE (nr_cliente, nm_cliente, nm_login, ds_senha) VALUES (SQ_MC_CLIENTE.NEXTVAL, 'Mario Sérgio', 'mario_sergio', 'mario123');
+INSERT INTO MC_CLIENTE (nr_cliente, nm_cliente, nm_login, ds_senha) VALUES (SQ_MC_CLIENTE.NEXTVAL, 'Nicole Bowls', 'nicole_bowls', 'nicole123');
+INSERT INTO MC_CLIENTE (nr_cliente, nm_cliente, nm_login, ds_senha) VALUES (SQ_MC_CLIENTE.NEXTVAL, 'Antônio Fagundes', 'antonio_fagundes', 'tonho123');
+INSERT INTO MC_CLIENTE (nr_cliente, nm_cliente, nm_login, ds_senha) VALUES (SQ_MC_CLIENTE.NEXTVAL, 'Ana Ritali', 'ana_ritali', 'senha_forte123');
+INSERT INTO MC_CLIENTE (nr_cliente, nm_cliente, nm_login, ds_senha) VALUES (SQ_MC_CLIENTE.NEXTVAL, 'Diogo Defante', 'diogo_defante', 'natalinaa@');
+INSERT INTO MC_CLIENTE (nr_cliente, nm_cliente, nm_login, ds_senha) VALUES (SQ_MC_CLIENTE.NEXTVAL, 'Collen Rover', 'collen_rover', 'cover123');
+INSERT INTO MC_CLIENTE (nr_cliente, nm_cliente, nm_login, ds_senha) VALUES (SQ_MC_CLIENTE.NEXTVAL, 'Lilica Pilica', 'lilica_pilica', 'lilica123');
+INSERT INTO MC_CLIENTE (nr_cliente, nm_cliente, nm_login, ds_senha) VALUES (SQ_MC_CLIENTE.NEXTVAL, 'Erick Jacquin', 'erick_jacquin', 'masterchef123');
+INSERT INTO MC_CLIENTE (nr_cliente, nm_cliente, nm_login, ds_senha) VALUES (SQ_MC_CLIENTE.NEXTVAL, 'Barbie Robin', 'barbie_robin', 'barbie123');
+
+INSERT INTO MC_CLIENTE (nr_cliente, nm_cliente, nm_login, ds_senha) VALUES (SQ_MC_CLIENTE.NEXTVAL, 'Pastelaria do Serjão', 'pastel_do_serjo', 'pastel123');
+INSERT INTO MC_CLIENTE (nr_cliente, nm_cliente, nm_login, ds_senha) VALUES (SQ_MC_CLIENTE.NEXTVAL, 'Lanches da Marie', 'lanches_marie', 'marie123');
+INSERT INTO MC_CLIENTE (nr_cliente, nm_cliente, nm_login, ds_senha) VALUES (SQ_MC_CLIENTE.NEXTVAL, 'Hakuna Batatas', 'hakuna_batatas', 'batata123');
+INSERT INTO MC_CLIENTE (nr_cliente, nm_cliente, nm_login, ds_senha) VALUES (SQ_MC_CLIENTE.NEXTVAL, 'Senhora da Moda', 'sra_moda', 'moda123');
+INSERT INTO MC_CLIENTE (nr_cliente, nm_cliente, nm_login, ds_senha) VALUES (SQ_MC_CLIENTE.NEXTVAL, 'Churrasic Park Lanches', 'churrasic_park', 'burgao123');
+
+-- Clientes PF (mc_cli_fisica)
+INSERT INTO mc_cli_fisica (nr_cliente, dt_nascimento, fl_sexo_biologico, nr_cpf) VALUES (1, TO_DATE('08/09/1988', 'dd/mm/yyyy'), 'F', '589.893.720-03');
+INSERT INTO mc_cli_fisica (nr_cliente, dt_nascimento, fl_sexo_biologico, nr_cpf) VALUES (2, TO_DATE('07/08/2002', 'dd/mm/yyyy'), 'M', '061.277.280-29');
+INSERT INTO mc_cli_fisica (nr_cliente, dt_nascimento, fl_sexo_biologico, nr_cpf) VALUES (3, TO_DATE('19/01/2002', 'dd/mm/yyyy'), 'F', '303.593.690-06');
+INSERT INTO mc_cli_fisica (nr_cliente, dt_nascimento, fl_sexo_biologico, nr_cpf) VALUES (4, TO_DATE('17/09/2003', 'dd/mm/yyyy'), 'M', '708.894.690-40');
+INSERT INTO mc_cli_fisica (nr_cliente, dt_nascimento, fl_sexo_biologico, nr_cpf) VALUES (5, TO_DATE('02/09/2000', 'dd/mm/yyyy'), 'F', '730.368.410-75');
+INSERT INTO mc_cli_fisica (nr_cliente, dt_nascimento, fl_sexo_biologico, nr_cpf) VALUES (6, TO_DATE('09/08/1988', 'dd/mm/yyyy'), 'M', '861.532.770-04');
+INSERT INTO mc_cli_fisica (nr_cliente, dt_nascimento, fl_sexo_biologico, nr_cpf) VALUES (7, TO_DATE('08/07/2003', 'dd/mm/yyyy'), 'F', '715.784.920-84');
+INSERT INTO mc_cli_fisica (nr_cliente, dt_nascimento, fl_sexo_biologico, nr_cpf) VALUES (8, TO_DATE('01/09/1989', 'dd/mm/yyyy'), 'F', '917.783.280-91');
+INSERT INTO mc_cli_fisica (nr_cliente, dt_nascimento, fl_sexo_biologico, nr_cpf) VALUES (9, TO_DATE('01/07/1987', 'dd/mm/yyyy'), 'M', '195.082.750-06');
+INSERT INTO mc_cli_fisica (nr_cliente, dt_nascimento, fl_sexo_biologico, nr_cpf) VALUES (10, TO_DATE('02/09/1982', 'dd/mm/yyyy'), 'F', '555.004.950-38');
+
+-- Clientes PJ (mc_cli_juridica)
+INSERT INTO mc_cli_juridica (nr_cliente) VALUES (11);
+INSERT INTO mc_cli_juridica (nr_cliente) VALUES (12);
+INSERT INTO mc_cli_juridica (nr_cliente) VALUES (13);
+INSERT INTO mc_cli_juridica (nr_cliente) VALUES (14);
+INSERT INTO mc_cli_juridica (nr_cliente) VALUES (15);
+
+-- Endereços
+INSERT INTO mc_end_cli (nr_cliente, cd_logradouro_cli, nr_end) VALUES (1, 1, 101);
+INSERT INTO mc_end_cli (nr_cliente, cd_logradouro_cli, nr_end) VALUES (2, 2, 102);
+INSERT INTO mc_end_cli (nr_cliente, cd_logradouro_cli, nr_end) VALUES (3, 3, 103);
+INSERT INTO mc_end_cli (nr_cliente, cd_logradouro_cli, nr_end) VALUES (4, 4, 104);
+INSERT INTO mc_end_cli (nr_cliente, cd_logradouro_cli, nr_end) VALUES (5, 5, 105);
+INSERT INTO mc_end_cli (nr_cliente, cd_logradouro_cli, nr_end) VALUES (6, 6, 106);
+INSERT INTO mc_end_cli (nr_cliente, cd_logradouro_cli, nr_end) VALUES (7, 7, 107);
+INSERT INTO mc_end_cli (nr_cliente, cd_logradouro_cli, nr_end) VALUES (8, 8, 108);
+INSERT INTO mc_end_cli (nr_cliente, cd_logradouro_cli, nr_end) VALUES (9, 9, 109);
+INSERT INTO mc_end_cli (nr_cliente, cd_logradouro_cli, nr_end) VALUES (10, 10, 110);
+INSERT INTO mc_end_cli (nr_cliente, cd_logradouro_cli, nr_end) VALUES (11, 11, 111);
+INSERT INTO mc_end_cli (nr_cliente, cd_logradouro_cli, nr_end) VALUES (12, 12, 112);
+INSERT INTO mc_end_cli (nr_cliente, cd_logradouro_cli, nr_end) VALUES (13, 13, 113);
+INSERT INTO mc_end_cli (nr_cliente, cd_logradouro_cli, nr_end) VALUES (14, 14, 114);
+INSERT INTO mc_end_cli (nr_cliente, cd_logradouro_cli, nr_end) VALUES (15, 15, 115);
+
+-- Cadastrar categorias em respectivos produtos
+
+INSERT INTO mc_categoria_prod (cd_categoria, tp_categoria, ds_categoria, st_categoria) VALUES (sq_mc_categoria.nextval, 'P', 'Artesanato', 'A');
+INSERT INTO mc_categoria_prod (cd_categoria, tp_categoria, ds_categoria, st_categoria) VALUES (sq_mc_categoria.nextval, 'P', 'Áudio', 'A');
+INSERT INTO mc_categoria_prod (cd_categoria, tp_categoria, ds_categoria, st_categoria) VALUES (sq_mc_categoria.nextval, 'P', 'Brinquedos', 'A');
+INSERT INTO mc_categoria_prod (cd_categoria, tp_categoria, ds_categoria, st_categoria) VALUES (sq_mc_categoria.nextval, 'P', 'Celular e Smartphone', 'A');
+INSERT INTO mc_categoria_prod (cd_categoria, tp_categoria, ds_categoria, st_categoria) VALUES (sq_mc_categoria.nextval, 'P', 'Colchão', 'A');
+INSERT INTO mc_categoria_prod (cd_categoria, tp_categoria, ds_categoria, st_categoria) VALUES (sq_mc_categoria.nextval, 'P', 'Esporte e Lazer', 'A');
+INSERT INTO mc_categoria_prod (cd_categoria, tp_categoria, ds_categoria, st_categoria) VALUES (sq_mc_categoria.nextval, 'P', 'Ferramentas', 'A');
+INSERT INTO mc_categoria_prod (cd_categoria, tp_categoria, ds_categoria, st_categoria) VALUES (sq_mc_categoria.nextval, 'P', 'Games', 'A');
+INSERT INTO mc_categoria_prod (cd_categoria, tp_categoria, ds_categoria, st_categoria) VALUES (sq_mc_categoria.nextval, 'P', 'Informática', 'A');
+INSERT INTO mc_categoria_prod (cd_categoria, tp_categoria, ds_categoria, st_categoria) VALUES (sq_mc_categoria.nextval, 'P', 'Livros', 'A');
+INSERT INTO mc_categoria_prod (cd_categoria, tp_categoria, ds_categoria, st_categoria) VALUES (sq_mc_categoria.nextval, 'P', 'Pet Shop', 'A');
+INSERT INTO mc_categoria_prod (cd_categoria, tp_categoria, ds_categoria, st_categoria) VALUES (sq_mc_categoria.nextval, 'P', 'TV', 'A');
+INSERT INTO mc_categoria_prod (cd_categoria, tp_categoria, ds_categoria, st_categoria) VALUES (sq_mc_categoria.nextval, 'P', 'Utilidades Domésticas', 'A');
+
+
+-- Cadastrar categorias em respectivos vídeos
+
+INSERT INTO mc_categoria_prod (cd_categoria, tp_categoria, ds_categoria, st_categoria) VALUES (sq_mc_categoria.nextval, 'V', 'Instalação do produto', 'A');
+INSERT INTO mc_categoria_prod (cd_categoria, tp_categoria, ds_categoria, st_categoria) VALUES (sq_mc_categoria.nextval, 'V', 'Uso no cotidiano', 'A');
+INSERT INTO mc_categoria_prod (cd_categoria, tp_categoria, ds_categoria, st_categoria) VALUES (sq_mc_categoria.nextval, 'V', 'Comercial com personalidade', 'A');
+INSERT INTO mc_categoria_prod (cd_categoria, tp_categoria, ds_categoria, st_categoria) VALUES (sq_mc_categoria.nextval, 'V', 'Demonstração', 'A');
+
+-- Cadastrar produtos associadas as categorias aos produtos
+
+INSERT INTO mc_produto (cd_produto, cd_categoria, ds_produto, vl_unitario, ds_completa_prod, st_produto) VALUES (SQ_MC_PRODUTO.NEXTVAL, 1, 'Jarro de Planta', 20.90, 'Jarro de barro verde para plantas', 'A');
+INSERT INTO mc_produto (cd_produto, cd_categoria, ds_produto, vl_unitario, ds_completa_prod, st_produto) VALUES (SQ_MC_PRODUTO.NEXTVAL, 1, 'Colar', 5.90, 'Colar de Miçanga', 'A');
+INSERT INTO mc_produto (cd_produto, cd_categoria, ds_produto, vl_unitario, ds_completa_prod, st_produto) VALUES (SQ_MC_PRODUTO.NEXTVAL, 2, 'Fone de Ouvido', 199.99, 'Fone Bluetooth Branco Alta Definição', 'A');
+INSERT INTO mc_produto (cd_produto, cd_categoria, ds_produto, vl_unitario, ds_completa_prod, st_produto) VALUES (SQ_MC_PRODUTO.NEXTVAL, 2, 'Microfone', 49.90, 'Microfone com fio', 'A');
+INSERT INTO mc_produto (cd_produto, cd_categoria, ds_produto, vl_unitario, ds_completa_prod, st_produto) VALUES (SQ_MC_PRODUTO.NEXTVAL, 3, 'Quebra Cabeça', 50.90, 'Quebra Cabeça 5000 Peças de um ônibus', 'A');
+INSERT INTO mc_produto (cd_produto, cd_categoria, ds_produto, vl_unitario, ds_completa_prod, st_produto) VALUES (SQ_MC_PRODUTO.NEXTVAL, 3, 'Boneca Barbie', 20.90, 'Boenca Barbie com vários acessórios', 'A');
+INSERT INTO mc_produto (cd_produto, cd_categoria, ds_produto, vl_unitario, ds_completa_prod, st_produto) VALUES (SQ_MC_PRODUTO.NEXTVAL, 4, 'Sansung S23', 9999.99, 'Celular topo de linha', 'A');
+INSERT INTO mc_produto (cd_produto, cd_categoria, ds_produto, vl_unitario, ds_completa_prod, st_produto) VALUES (SQ_MC_PRODUTO.NEXTVAL, 4, 'HI Phone', 149.90, 'Celular básico', 'A');
+INSERT INTO mc_produto (cd_produto, cd_categoria, ds_produto, vl_unitario, ds_completa_prod, st_produto) VALUES (SQ_MC_PRODUTO.NEXTVAL, 5, 'Colchão de água', 300.90, 'Colchão simples de água', 'A');
+INSERT INTO mc_produto (cd_produto, cd_categoria, ds_produto, vl_unitario, ds_completa_prod, st_produto) VALUES (SQ_MC_PRODUTO.NEXTVAL, 6, 'Raquete de Tênis', 149.90, 'Kit com duas raquetes de tênis', 'A');
+INSERT INTO mc_produto (cd_produto, cd_categoria, ds_produto, vl_unitario, ds_completa_prod, st_produto) VALUES (SQ_MC_PRODUTO.NEXTVAL, 6, 'Bola de Futebol', 10.90, 'Bola de borracha para jogar futebol', 'A');
+INSERT INTO mc_produto (cd_produto, cd_categoria, ds_produto, vl_unitario, ds_completa_prod, st_produto) VALUES (SQ_MC_PRODUTO.NEXTVAL, 7, 'Martelo', 20.90, 'Marreta Biônica de Verdade', 'A');
+INSERT INTO mc_produto (cd_produto, cd_categoria, ds_produto, vl_unitario, ds_completa_prod, st_produto) VALUES (SQ_MC_PRODUTO.NEXTVAL, 7, 'Prego', 0.05, 'Uma unidade de prego', 'A');
+INSERT INTO mc_produto (cd_produto, cd_categoria, ds_produto, vl_unitario, ds_completa_prod, st_produto) VALUES (SQ_MC_PRODUTO.NEXTVAL, 8, 'Polistation', 70.90, 'Videogames preferido das crianças', 'A');
+INSERT INTO mc_produto (cd_produto, cd_categoria, ds_produto, vl_unitario, ds_completa_prod, st_produto) VALUES (SQ_MC_PRODUTO.NEXTVAL, 8, 'Nintendo Wii 2', 499.90, 'Nova versão do nintendo wii', 'A');
+INSERT INTO mc_produto (cd_produto, cd_categoria, ds_produto, vl_unitario, ds_completa_prod, st_produto) VALUES (SQ_MC_PRODUTO.NEXTVAL, 9, 'Teclado', 9.90, 'Teclado semi-mecânico', 'A');
+INSERT INTO mc_produto (cd_produto, cd_categoria, ds_produto, vl_unitario, ds_completa_prod, st_produto) VALUES (SQ_MC_PRODUTO.NEXTVAL, 10, 'Código do consumidor', 2.90, 'Livro útil para consumidores', 'A');
+INSERT INTO mc_produto (cd_produto, cd_categoria, ds_produto, vl_unitario, ds_completa_prod, st_produto) VALUES (SQ_MC_PRODUTO.NEXTVAL, 11, 'Osso', 1.90, 'Osso para limpar os dentes', 'A');
+INSERT INTO mc_produto (cd_produto, cd_categoria, ds_produto, vl_unitario, ds_completa_prod, st_produto) VALUES (SQ_MC_PRODUTO.NEXTVAL, 12, 'TV 12 polegadas', 90.90, 'TV 8K tela plana', 'A');
+INSERT INTO mc_produto (cd_produto, cd_categoria, ds_produto, vl_unitario, ds_completa_prod, st_produto) VALUES (SQ_MC_PRODUTO.NEXTVAL, 13, 'Vassoura', 4.90, 'Vassoura de palha usada', 'A');
+
+
