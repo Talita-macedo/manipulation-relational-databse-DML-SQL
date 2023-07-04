@@ -1,7 +1,7 @@
 # manipulation-relational-databse-DML-SQL
 Manipulação de dados em um banco de dados relacional, utilizando instruções SQL (focado em DML e DQL/DRS)
 
-# Elementos essenciais
+# Pré-requisitos
 
 Para começar a usar DML (Data Manipulation Language) em SQL, você precisará de alguns elementos essenciais:
 
