@@ -1,4 +1,4 @@
--- Inserir dados em uma tabela de departamentos 
+-- Insira dados em uma tabela de departamentos 
 
 INSERT INTO MC_DEPTO (CD_DEPTO, NM_DEPTO, ST_DEPTO) VALUES (SQ_MC_DEPTO.NEXTVAL, 'COMERCIAL','A');
 INSERT INTO MC_DEPTO (CD_DEPTO, NM_DEPTO, ST_DEPTO) VALUES (SQ_MC_DEPTO.NEXTVAL, 'CONTABILIDADE','A');
@@ -8,7 +8,7 @@ INSERT INTO MC_DEPTO (CD_DEPTO, NM_DEPTO, ST_DEPTO) VALUES (SQ_MC_DEPTO.NEXTVAL,
 INSERT INTO MC_DEPTO (CD_DEPTO, NM_DEPTO, ST_DEPTO) VALUES (SQ_MC_DEPTO.NEXTVAL, 'LOGISTICA','A');
 INSERT INTO MC_DEPTO (CD_DEPTO, NM_DEPTO, ST_DEPTO) VALUES (SQ_MC_DEPTO.NEXTVAL, 'RECURSOS HUMANOS (RH)','A');
 
--- Inserir usuários em uma tabela funcionários
+-- Insira usuários em uma tabela funcionários
 
 INSERT INTO mc_funcionario (cd_funcionario, cd_depto, nm_funcionario, dt_nascimento, ds_cargo)
      VALUES (SQ_MC_FUNCIONARIO.NEXTVAL, 1, 'Adele Bispo' , TO_DATE('25/12/1980', 'dd/mm/yyyy'), 'Gerente Comercial');
@@ -59,7 +59,7 @@ INSERT INTO mc_funcionario (cd_funcionario, cd_depto, nm_funcionario, dt_nascime
 INSERT INTO mc_funcionario (cd_funcionario, cd_depto, nm_funcionario, dt_nascimento, ds_cargo, vl_salario)
      VALUES (SQ_MC_FUNCIONARIO.NEXTVAL, 7, 'Mickel Angelo' , TO_DATE('18/02/2003', 'dd/mm/yyyy'), 'Trainee de RH', 1000);
 
--- inserir dados de Estados associados para cada cidade, associe no mínimo 1 bairro e para cada bairro, associe 2 endereços
+-- Insira dados de Estados associados para cada cidade, associe no mínimo 1 bairro e para cada bairro, associe 2 endereços
 
 -- Estados
 INSERT INTO MC_ESTADO (SG_ESTADO, NM_ESTADO) VALUES ('AC', 'ACRE');
@@ -136,7 +136,7 @@ INSERT INTO MC_LOGRADOURO (CD_LOGRADOURO, CD_BAIRRO, NM_LOGRADOURO, NR_CEP) VALU
 INSERT INTO MC_LOGRADOURO (CD_LOGRADOURO, CD_BAIRRO, NM_LOGRADOURO, NR_CEP) VALUES (SQ_MC_LOGRADOURO.NEXTVAL, 10, 'Rua Pereira', 85810901);
 INSERT INTO MC_LOGRADOURO (CD_LOGRADOURO, CD_BAIRRO, NM_LOGRADOURO, NR_CEP) VALUES (SQ_MC_LOGRADOURO.NEXTVAL, 10, 'Rua do Ferro', 85810010);
 
--- Cadastrar na tabela todos os funcionários com no mínimo 1 endereço para cada um
+-- Cadastre na tabela todos os funcionários com 1 endereço para cada um
 iNSERT INTO mc_end_func (cd_funcionario, cd_logradouro, nr_end, dt_inicio, st_end) values (1, 1, 1, TO_DATE('01/01/2001', 'dd/mm/yyyy'), 'A');
 iNSERT INTO mc_end_func (cd_funcionario, cd_logradouro, nr_end, dt_inicio, st_end) values (2, 2, 2, TO_DATE('02/01/2001', 'dd/mm/yyyy'), 'A');
 iNSERT INTO mc_end_func (cd_funcionario, cd_logradouro, nr_end, dt_inicio, st_end) values (3, 3, 3, TO_DATE('03/01/2001', 'dd/mm/yyyy'), 'A');
@@ -164,7 +164,7 @@ iNSERT INTO mc_end_func (cd_funcionario, cd_logradouro, nr_end, dt_inicio, dt_te
 iNSERT INTO mc_end_func (cd_funcionario, cd_logradouro, nr_end, dt_inicio, dt_termino, st_end) values (21, 4, 44, TO_DATE('04/12/2001', 'dd/mm/yyyy'), TO_DATE('04/12/2002', 'dd/mm/yyyy'), 'I');
 
 
--- Cadastrar clientes com um endereço para cada um
+-- Cadastre clientes com um endereço para cada um
 
 -- Clientes no geral (MC_CLIENTE)
 INSERT INTO MC_CLIENTE (nr_cliente, nm_cliente, nm_login, ds_senha) VALUES (SQ_MC_CLIENTE.NEXTVAL, 'Paula Braccio', 'paula_braccio', 'paula123');
@@ -220,7 +220,7 @@ INSERT INTO mc_end_cli (nr_cliente, cd_logradouro_cli, nr_end) VALUES (13, 13, 1
 INSERT INTO mc_end_cli (nr_cliente, cd_logradouro_cli, nr_end) VALUES (14, 14, 114);
 INSERT INTO mc_end_cli (nr_cliente, cd_logradouro_cli, nr_end) VALUES (15, 15, 115);
 
--- Cadastrar categorias em respectivos produtos
+-- Cadastre categorias em respectivos produtos
 
 INSERT INTO mc_categoria_prod (cd_categoria, tp_categoria, ds_categoria, st_categoria) VALUES (sq_mc_categoria.nextval, 'P', 'Artesanato', 'A');
 INSERT INTO mc_categoria_prod (cd_categoria, tp_categoria, ds_categoria, st_categoria) VALUES (sq_mc_categoria.nextval, 'P', 'Áudio', 'A');
@@ -237,14 +237,14 @@ INSERT INTO mc_categoria_prod (cd_categoria, tp_categoria, ds_categoria, st_cate
 INSERT INTO mc_categoria_prod (cd_categoria, tp_categoria, ds_categoria, st_categoria) VALUES (sq_mc_categoria.nextval, 'P', 'Utilidades Domésticas', 'A');
 
 
--- Cadastrar categorias em respectivos vídeos
+-- Cadastre categorias em respectivos vídeos
 
 INSERT INTO mc_categoria_prod (cd_categoria, tp_categoria, ds_categoria, st_categoria) VALUES (sq_mc_categoria.nextval, 'V', 'Instalação do produto', 'A');
 INSERT INTO mc_categoria_prod (cd_categoria, tp_categoria, ds_categoria, st_categoria) VALUES (sq_mc_categoria.nextval, 'V', 'Uso no cotidiano', 'A');
 INSERT INTO mc_categoria_prod (cd_categoria, tp_categoria, ds_categoria, st_categoria) VALUES (sq_mc_categoria.nextval, 'V', 'Comercial com personalidade', 'A');
 INSERT INTO mc_categoria_prod (cd_categoria, tp_categoria, ds_categoria, st_categoria) VALUES (sq_mc_categoria.nextval, 'V', 'Demonstração', 'A');
 
--- Cadastrar produtos associadas as categorias aos produtos
+-- Cadastre produtos associadas as categorias aos produtos
 
 INSERT INTO mc_produto (cd_produto, cd_categoria, ds_produto, vl_unitario, ds_completa_prod, st_produto) VALUES (SQ_MC_PRODUTO.NEXTVAL, 1, 'Jarro de Planta', 20.90, 'Jarro de barro verde para plantas', 'A');
 INSERT INTO mc_produto (cd_produto, cd_categoria, ds_produto, vl_unitario, ds_completa_prod, st_produto) VALUES (SQ_MC_PRODUTO.NEXTVAL, 1, 'Colar', 5.90, 'Colar de Miçanga', 'A');
@@ -267,4 +267,84 @@ INSERT INTO mc_produto (cd_produto, cd_categoria, ds_produto, vl_unitario, ds_co
 INSERT INTO mc_produto (cd_produto, cd_categoria, ds_produto, vl_unitario, ds_completa_prod, st_produto) VALUES (SQ_MC_PRODUTO.NEXTVAL, 12, 'TV 12 polegadas', 90.90, 'TV 8K tela plana', 'A');
 INSERT INTO mc_produto (cd_produto, cd_categoria, ds_produto, vl_unitario, ds_completa_prod, st_produto) VALUES (SQ_MC_PRODUTO.NEXTVAL, 13, 'Vassoura', 4.90, 'Vassoura de palha usada', 'A');
 
+-- Cadastre 2 vídeos de produtos em uma tabela e associe esses 2 vídeos em um único produto já cadastrado
 
+INSERT INTO MC_SGV_PRODUTO_VIDEO (cd_produto, nr_sequencia, cd_categoria) VALUES (19, 1, 17);
+INSERT INTO MC_SGV_PRODUTO_VIDEO (cd_produto, nr_sequencia, cd_categoria) VALUES (18, 1, 14);
+
+-- cadastre 5 visualizações de vídeos de produtos em uma tabela e associe a um cliente 
+
+INSERT INTO mc_sgv_visualizacao_video(cd_visualizacao_video, cd_produto, dt_visualizacao, nr_hora_visualizacao) VALUES (SQ_MC_SGV_VISUAL_PROD.NEXTVAL, 19, TO_DATE('10/03/2023', 'dd/mm/yyyy'), 10);
+INSERT INTO mc_sgv_visualizacao_video(cd_visualizacao_video, cd_produto, dt_visualizacao, nr_hora_visualizacao) VALUES (SQ_MC_SGV_VISUAL_PROD.NEXTVAL, 19, TO_DATE('11/03/2023', 'dd/mm/yyyy'), 11);
+INSERT INTO mc_sgv_visualizacao_video(cd_visualizacao_video, cd_produto, dt_visualizacao, nr_hora_visualizacao) VALUES (SQ_MC_SGV_VISUAL_PROD.NEXTVAL, 18, TO_DATE('12/03/2023', 'dd/mm/yyyy'), 12);
+INSERT INTO mc_sgv_visualizacao_video(cd_visualizacao_video, cd_produto, dt_visualizacao, nr_hora_visualizacao) VALUES (SQ_MC_SGV_VISUAL_PROD.NEXTVAL, 18, TO_DATE('13/03/2023', 'dd/mm/yyyy'), 13);
+INSERT INTO mc_sgv_visualizacao_video(cd_visualizacao_video, cd_produto, dt_visualizacao, nr_hora_visualizacao) VALUES (SQ_MC_SGV_VISUAL_PROD.NEXTVAL, 18, TO_DATE('14/03/2023', 'dd/mm/yyyy'), 14);
+
+-- Cadastre uma categoria de produto com status I(nativo)
+
+INSERT INTO mc_categoria_prod (cd_categoria, tp_categoria, ds_categoria, st_categoria) VALUES (sq_mc_categoria.nextval, 'P', 'Roupas', 'I');
+
+-- Cadastre um produto com status I(nativo)
+
+INSERT INTO mc_produto (cd_produto, cd_categoria, ds_produto, vl_unitario, ds_completa_prod, st_produto) VALUES (SQ_MC_PRODUTO.NEXTVAL, 18, 'Jaqueta de couro', 15.90, 'Jaqueta de couro vegano', 'I');
+
+-- Selecione um funcionário e atualize o Cargo tendo 12% de aumento de salário
+
+UPDATE MC_FUNCIONARIO 
+SET VL_SALARIO = VL_SALARIO * 1.12, DS_CARGO = 'GERENTE DE RH' 
+WHERE CD_FUNCIONARIO = 21;
+
+-- Atualize a descrição de uma categoria de produto
+
+UPDATE MC_CATEGORIA_PROD
+SET ds_categoria = 'Jogos'
+WHERE cd_categoria = 8;
+
+-- Atualize o nome de um departamento, utilizando como filtro o nome do departamento antes de ser atualizado
+
+UPDATE MC_DEPTO
+SET NM_DEPTO = 'GESTÃO DE PESSOAS'
+WHERE NM_DEPTO = 'RECURSOS HUMANOS (RH)';
+
+-- Atualize a data de nascimento de um cliente pessoa física, definindo uma nova data
+
+UPDATE mc_cli_fisica
+SET dt_nascimento = TO_DATE('18/05/2002', 'dd/mm/yyyy')
+WHERE nr_cliente = 9;
+
+-- Atualize a descrição de uma categoria de vídeo
+
+UPDATE mc_categoria_prod
+SET ds_categoria = 'Comercial SEM personalidade'
+WHERE cd_categoria = 16;
+
+-- Desative um funcionário colocando o status como I(nativo) e também a data de desligamento como sendo a data de hoje (sysdate).
+
+UPDATE MC_FUNCIONARIO
+SET ST_FUNC = 'I', DT_DESLIGAMENTO = SYSDATE
+WHERE CD_FUNCIONARIO = 8;
+
+-- Cadastre um atendimento SAC, atualize a descrição detalhada de retorno do SAC feito pelo funcionário. Insira um conteúdo significativo, atualize também a data e hora de atendimento, acrescendo o número total de horas do atendimento SAC.
+
+-- Cadastrando SAC
+INSERT INTO MC_SGV_SAC (nr_sac, nr_cliente, cd_produto, cd_funcionario, tp_sac, ds_detalhada_sac, dt_abertura_sac, hr_abertura_sac) 
+     values (SQ_MC_SGV_SAC.NEXTVAL, 1, 1, 1,'D', 'O jarro quebra com facilidade? Se sim, possui garantia?', TO_DATE('04/04/2023', 'dd/mm/yyyy'), 10);
+-- Editando retorno do SAC
+UPDATE MC_SGV_SAC
+SET ds_detalhada_retorno_sac = 'Não, o jarro é bem resistente, mas oferecemos garantia adicional', 
+    dt_atendimento = TO_DATE('04/04/2023', 'dd/mm/yyyy'),
+    hr_atendimento_sac = 13,
+    nr_tempo_total_sac = 13 - hr_abertura_sac
+WHERE nr_sac = 1;
+
+-- Selecione o endereço de um cliente e coloque o status como I(nativo), preencha a data de término como sendo a data de ontem
+
+UPDATE MC_END_CLI
+SET st_end = 'I', dt_termino = SYSDATE - 1
+WHERE nr_cliente = 1 AND cd_logradouro_cli = 1;
+
+-- Selecione um endereço de funcionário e coloque o status como I(nativo), preencha a data de término como sendo a data de ontem
+
+UPDATE MC_END_FUNC
+SET st_end = 'I', dt_termino = SYSDATE - 1
+WHERE cd_funcionario = 1 AND cd_logradouro = 1;
