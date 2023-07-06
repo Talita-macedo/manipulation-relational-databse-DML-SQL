@@ -7,7 +7,7 @@ Para começar a usar DML (Data Manipulation Language) em SQL, você precisará d
 
     1. Sistema de Gerenciamento de Banco de Dados (SGBD): 
     
-    Instale um SGBD adequado ao seu ambiente, como [MySQL](https://www.mysql.com/), [Oracle](https://www.oracle.com/database/sqldeveloper/technologies/sql-data-modeler/download/), [SQL Server](https://www.microsoft.com/pt-br/sql-server/sql-server-downloads), [PostgreSQL](https://azure.microsoft.com/en-us/products/postgresql/?ef_id=_k_CjwKCAjwzJmlBhBBEiwAEJyLu-tv76jFrKt4yGxSJfCEU2MtmZ5CBQNPMVdJWBA5J5zrm8BngcDcYxoCEEcQAvD_BwE_k_&OCID=AIDcmmzmnb0182_SEM__k_CjwKCAjwzJmlBhBBEiwAEJyLu-tv76jFrKt4yGxSJfCEU2MtmZ5CBQNPMVdJWBA5J5zrm8BngcDcYxoCEEcQAvD_BwE_k_&gclid=CjwKCAjwzJmlBhBBEiwAEJyLu-tv76jFrKt4yGxSJfCEU2MtmZ5CBQNPMVdJWBA5J5zrm8BngcDcYxoCEEcQAvD_BwE), entre outros.
+    Instale um SGBD adequado ao seu ambiente, como [MySQL](https://www.mysql.com/), [Oracle](https://www.oracle.com/database/sqldeveloper/technologies/sql-data-modeler/download/), [SQL Server](https://www.microsoft.com/pt-br/sql-server/sql-server-downloads), [PostgreSQL](https://azure.microsoft.com/pt-br/products/postgresql/?ef_id=_k_CjwKCAjwzJmlBhBBEiwAEJyLu-0a574O1xasKWKQ90s0z9n-OC8aKM7K7JSrzEXG-skvvdebIooFchoCKZMQAvD_BwE_k_&OCID=AIDcmmzmnb0182_SEM__k_CjwKCAjwzJmlBhBBEiwAEJyLu-0a574O1xasKWKQ90s0z9n-OC8aKM7K7JSrzEXG-skvvdebIooFchoCKZMQAvD_BwE_k_&gclid=CjwKCAjwzJmlBhBBEiwAEJyLu-0a574O1xasKWKQ90s0z9n-OC8aKM7K7JSrzEXG-skvvdebIooFchoCKZMQAvD_BwE), entre outros.
 
     2. Banco de Dados: 
     
