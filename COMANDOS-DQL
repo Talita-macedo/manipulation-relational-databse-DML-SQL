@@ -1,0 +1,69 @@
+-- Crie uma consulta SQL por meio do comando SELECT que exiba informações das categorias de produto e respectivos produtos de cada categoria. 
+Exiba as seguintes informações: código e nome da categoria, código e descrição do produto, valor unitário, tipo de embalagem e percentual do 
+lucro de cada produto. Caso exista alguma categoria sem produto, exibir a categoria e deixar os dados do produto em branco. Classifique a 
+consulta em ordem de categoria e nome de produto de forma ascendente. 
+
+SELECT 
+	c.cd_categoria, 
+    c.ds_categoria, 
+    p.cd_produto, 
+    p.ds_produto, 
+    p.vl_unitario, 
+    p.tp_embalagem, 
+    p.vl_perc_lucro
+FROM 
+    mc_categoria_prod c
+LEFT JOIN mc_produto p
+       ON c.cd_categoria = p.cd_categoria
+ORDER BY c.cd_categoria, p.ds_produto
+
+-- Crie uma instrução SQL que exiba os dados dos clientes pessoas físicas. Exiba as seguintes informações: código e nome do cliente, 
+e-mail, telefone, login, data de nascimento, dia da semana de nascimento, anos de vida, sexo biológico e CPF
+
+SELECT
+    pf.nr_cliente,
+    c.nm_cliente,
+    c.ds_email,
+    c.nr_telefone,
+    c.nm_login,
+    pf.dt_nascimento,
+    TO_CHAR(dt_nascimento, 'day') AS  nr_dia_semana_nasc,
+    CAST((SYSDATE - dt_nascimento) / 365 AS integer) AS nr_anos_de_vida,
+    pf.fl_sexo_biologico,
+    pf.nr_cpf
+FROM
+    mc_cli_fisica pf
+INNER JOIN mc_cliente c
+       ON pf.nr_cliente = c.nr_cliente
+
+-- Crie uma instrução SQL que exiba os dados dos clientes pessoa jurídica. Exiba as seguintes informações: código e nome do cliente, 
+e-mail, telefone, login, data de fundação, dia da semana da fundação, anos de vida da empresa e CNPJ
+
+SELECT
+    pj.nr_cliente,
+    c.nm_cliente,
+    c.ds_email,
+    c.nr_telefone,
+    c.nm_login,
+    pj.dt_fundacao,
+    TO_CHAR(dt_fundacao, 'day') AS nr_dia_semana_fund,
+    CAST((SYSDATE - dt_fundacao) / 365 AS integer) AS nr_anos_de_vida,
+    pj.nr_cnpj
+FROM
+    mc_cli_juridica pj
+INNER JOIN mc_cliente c
+       ON pj.nr_cliente = c.nr_cliente
+
+-- Exiba as seguintes informações da tabela de visualização dos vídeos dos produtos: código do produto, nome do produto, 
+data e hora de visualização do produto. Exiba essas informações classificadas pela data e hora mais recente
+
+SELECT 
+    v.cd_produto,
+    p.ds_produto,
+    v.dt_visualizacao,
+    v.nr_hora_visualizacao
+FROM
+    mc_sgv_visualizacao_video v
+INNER JOIN mc_produto p
+       ON v.cd_produto = p.cd_produto
+ORDER BY v.dt_visualizacao DESC, v.nr_hora_visualizacao DESC
